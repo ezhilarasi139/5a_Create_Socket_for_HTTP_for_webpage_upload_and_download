@@ -33,7 +33,6 @@ while True:
     else:
         c.close()
         break
-
 ```
 SERVER
 ```
@@ -43,14 +42,11 @@ s.connect(('localhost',8000))
 while True:
     print(s.recv(1024).decode())
     s.send("Acknowledgement Recived".encode())
-
 ```
 ## OUTPUT
 CLIENT
 ![Screenshot (88)](https://github.com/user-attachments/assets/15766954-6b80-429c-8f29-f36b0b544265)
-
 SERVER
 ![Screenshot (89)](https://github.com/user-attachments/assets/0c6c9265-807a-4c90-8e0c-be35671efdf1)
-
 ## Result
 Thus the socket for HTTP for web page upload and download created and Executed
